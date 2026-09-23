@@ -24,7 +24,6 @@ header p {
   color: #6b7280;
 }
 
-/* Form */
 form {
   max-width: 500px;
   margin: 0 auto 32px;
@@ -71,11 +70,10 @@ form button {
 form button:hover { background: #4338ca; }
 form button:active { transform: scale(0.98); }
 
-/* Student grid */
 #student-list {
   display: grid;
-  grid-template-columns: repeat(5, 220px); /* desktop: 5 per row */
-  justify-content: center; /* centers cards when row isn't full */
+  grid-template-columns: repeat(5, 220px); /* desktop 5 per row */
+  justify-content: center;
   gap: 16px;
   max-width: 1200px;
   margin: 0 auto;
@@ -83,13 +81,13 @@ form button:active { transform: scale(0.98); }
 
 @media (max-width: 900px) {
   #student-list {
-    grid-template-columns: repeat(3, 220px); /* tablet: 3 per row */
+    grid-template-columns: repeat(3, 220px); /* tablet 3 per row */
   }
 }
 
 @media (max-width: 500px) {
   #student-list {
-    grid-template-columns: 1fr; /* mobile: 1 per row */
+    grid-template-columns: 1fr; /* mobile 1 per row */
     max-width: 320px;
   }
 }
